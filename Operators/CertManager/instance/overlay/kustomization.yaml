@@ -22,7 +22,7 @@ patches:
         path: /spec/acme/solvers/0/dns01/route53/hostedZoneID
         value: Z15TOI3L8V1WFF
   - target:
-      group: cert-manager.io/v1
+      group: cert-manager.io
       version: v1
       kind: Certificate
       name: router-certs-letsencrypt
