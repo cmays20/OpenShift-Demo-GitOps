@@ -17,7 +17,7 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
-  name: patch-cluster-wildcard-cert
+  name: cert-manager-dns-patch
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 roleRef:
