@@ -6,9 +6,9 @@ metadata:
     argocd.argoproj.io/sync-wave: "1"
 rules:
   - apiGroups:
-      - cert-manager.io
+      - operator.openshift.io
     resources:
-      - CertManager
+      - certmanagers
     verbs:
       - get
       - list
