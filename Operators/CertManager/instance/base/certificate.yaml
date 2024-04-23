@@ -3,6 +3,8 @@ kind: Certificate
 metadata:
   name: router-certs-letsencrypt
   namespace: openshift-ingress
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   commonName: '*.apps.clustername.example.com'
   dnsNames:
