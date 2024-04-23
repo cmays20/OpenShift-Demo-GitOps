@@ -27,6 +27,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: cert-manager-dns-patch-job-sa
+    namespace: cert-manager
 ---
 apiVersion: v1
 kind: ServiceAccount
