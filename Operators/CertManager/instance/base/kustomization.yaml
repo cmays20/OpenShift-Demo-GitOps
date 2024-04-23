@@ -9,3 +9,5 @@ resources:
   - certificate.yaml
   - cluster-issuer.yaml
   - credentials-request.yaml
+  - cert-manager-dns-patch-job.yaml
+  - cert-manager-patch-cluster-wildcard-cert.yaml
