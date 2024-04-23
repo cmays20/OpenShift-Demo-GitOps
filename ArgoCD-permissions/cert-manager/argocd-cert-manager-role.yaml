@@ -9,3 +9,6 @@ rules:
   - apiGroups: ["cloudcredential.openshift.io"]
     resources: ["credentialsrequests"]
     verbs: ["*"]
+  - apiGroups: [""]
+    resources: ["ServiceAccount"]
+    verbs: ["*"]
