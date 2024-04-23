@@ -12,6 +12,6 @@ rules:
   - apiGroups: [""]
     resources: ["serviceaccounts"]
     verbs: ["*"]
-  - apiGroups: [ "" ]
+  - apiGroups: [ "batch" ]
     resources: [ "jobs" ]
     verbs: [ "*" ]

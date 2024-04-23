@@ -34,6 +34,7 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: cert-manager-wildcard-cert-patch-job-sa
+    namespace: cert-manager
 ---
 apiVersion: v1
 kind: ServiceAccount
