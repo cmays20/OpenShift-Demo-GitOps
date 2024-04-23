@@ -14,7 +14,7 @@ patches:
       version: v1
       kind: ClusterIssuer
       name: acme-prod-issuer
-    patch:
+    patch: |-
       - op: replace
         path: /spec/acme/email
         value: 'cmays@outlook.com'
@@ -26,7 +26,7 @@ patches:
       version: v1
       kind: Certificate
       name: router-certs-letsencrypt
-    patch:
+    patch: |-
       - op: replace
         path: /spec/commonName
         value: '*.apps.mays-demo.sandbox710.opentlc.com'
