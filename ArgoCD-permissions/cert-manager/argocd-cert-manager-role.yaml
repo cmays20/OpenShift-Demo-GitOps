@@ -10,7 +10,7 @@ rules:
     resources: ["credentialsrequests"]
     verbs: ["*"]
   - apiGroups: [""]
-    resources: ["ServiceAccount"]
+    resources: ["serviceaccounts"]
     verbs: ["*"]
   - apiGroups: [ "" ]
     resources: [ "jobs" ]
