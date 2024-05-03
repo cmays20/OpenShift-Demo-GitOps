@@ -5,6 +5,7 @@ metadata:
   namespace: openshift-ingress
   annotations:
     argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   commonName: '*.apps.clustername.example.com'
   dnsNames:
