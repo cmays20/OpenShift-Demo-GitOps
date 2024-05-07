@@ -1,0 +1,14 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: argocd-rhacs-role
+rules:
+  - apiGroups: ["platform.stackrox.io"] # "" indicates the core API group
+    resources: ["*"]
+    verbs: ["*"]
+  - apiGroups: [""]
+    resources: ["serviceaccounts"]
+    verbs: ["*"]
+  - apiGroups: [ "batch" ]
+    resources: [ "jobs" ]
+    verbs: [ "*" ]

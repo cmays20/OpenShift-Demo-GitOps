@@ -8,7 +8,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: ArgoCD-permissions/cert-manager
+    path: ArgoCD-permissions/aggregate/all
     repoURL: 'https://github.com/cmays20/OpenShift-Demo-GitOps.git'
     targetRevision: HEAD
   syncPolicy:

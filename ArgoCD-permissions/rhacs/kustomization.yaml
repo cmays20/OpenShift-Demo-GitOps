@@ -1,0 +1,3 @@
+resources:
+  - argocd-rhacs-role.yaml
+  - argocd-rhacs-rolebinding.yaml
