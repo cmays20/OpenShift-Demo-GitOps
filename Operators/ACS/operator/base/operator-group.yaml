@@ -4,5 +4,3 @@ metadata:
   name: rhacs-operator
 spec:
   upgradeStrategy: Default
-  targetNamespaces:
-    - rhacs-operator
