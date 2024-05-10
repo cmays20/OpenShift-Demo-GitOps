@@ -1,0 +1,4 @@
+resources:
+  - ../overlay-zone-a
+  - ../overlay-zone-b
+  - ../overlay-zone-c
