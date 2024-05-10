@@ -20,7 +20,7 @@
   path: /spec/template/spec/providerSpec/value/ami/id
   value: ami-049d8fda91038a0fd
 - op: replace
-  path: /spec/template/spec/providerSpec/value/iamInstanceProfile
+  path: /spec/template/spec/providerSpec/value/iamInstanceProfile/id
   value: mays-demo-6dfkk-worker-profile
 - op: replace
   path: /spec/template/spec/providerSpec/value/placement/availabilityZone
