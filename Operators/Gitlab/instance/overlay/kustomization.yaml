@@ -1,0 +1,13 @@
+resources:
+  - ../base
+
+patches:
+  - target:
+      group: apps.gitlab.com
+      version: v1beta1
+      kind: Gitlab
+      name: gitlab
+    patch: |-
+      - op: replace
+        path: /spec/chart/values/global/hosts/domain
+        value: 'apps.mays-demo.sandbox375.opentlc.com'
