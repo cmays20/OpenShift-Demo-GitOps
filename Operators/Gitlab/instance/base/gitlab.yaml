@@ -10,7 +10,7 @@ spec:
     values:
       global:
         hosts:
-          domain: replace-with-base-domain
+          domain: example.com
         ingress:
           class: openshift-default
           configureCertmanager: false

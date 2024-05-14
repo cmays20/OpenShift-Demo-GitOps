@@ -1,0 +1,3 @@
+- op: replace
+  path: /spec/chart/values/global/hosts/domain
+  value: apps.mays-demo.sandbox444.opentlc.com
