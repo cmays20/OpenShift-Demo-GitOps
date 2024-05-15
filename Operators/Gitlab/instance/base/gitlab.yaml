@@ -28,7 +28,7 @@ spec:
         hosts:
           domain: example.com
         ingress:
-          class:
+          class: none
           configureCertmanager: false
           annotations:
             route.openshift.io/termination: "edge"
