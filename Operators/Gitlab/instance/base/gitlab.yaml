@@ -4,10 +4,26 @@ metadata:
   name: gitlab
   namespace: gitlab-system
   annotations:
-    argocd.argoproj.io/sync-wave: "2"
+    argocd.argoproj.io/sync-wave: "1"
 spec:
   chart:
     values:
+      gitlab:
+        webservice:
+          ingress:
+            tls:
+              secretName: RELEASE-gitlab-tls
+        kas:
+          ingress:
+            tls:
+              secretName: RELEASE-kas-tls
+        ingress:
+          tls:
+            secretName: RELEASE-registry-tls
+      minio:
+        ingress:
+          tls:
+            secretName: RELEASE-minio-tls
       global:
         hosts:
           domain: example.com
@@ -16,6 +32,7 @@ spec:
           configureCertmanager: false
           annotations:
             route.openshift.io/termination: "edge"
+            kubernetes.io/tls-acme: true
       nginx-ingress:
         enabled: false
       certmanager:
