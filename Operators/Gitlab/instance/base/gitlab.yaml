@@ -33,6 +33,7 @@ spec:
           annotations:
             route.openshift.io/termination: "edge"
             kubernetes.io/tls-acme: true
+            cert-manager.io/cluster-issuer: acme-prod-issuer
       nginx-ingress:
         enabled: false
       certmanager:
