@@ -12,23 +12,23 @@ spec:
         webservice:
           ingress:
             tls:
-              secretName: RELEASE-gitlab-tls
+              secretName: gitlab-tls
         kas:
           ingress:
             tls:
-              secretName: RELEASE-kas-tls
+              secretName: kas-tls
         ingress:
           tls:
-            secretName: RELEASE-registry-tls
+            secretName: registry-tls
       minio:
         ingress:
           tls:
-            secretName: RELEASE-minio-tls
+            secretName: minio-tls
       global:
         hosts:
           domain: example.com
         ingress:
-          class: none
+          class:
           configureCertmanager: false
           annotations:
             route.openshift.io/termination: "edge"
