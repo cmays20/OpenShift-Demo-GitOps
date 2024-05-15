@@ -4,7 +4,7 @@ metadata:
   name: gitlab
   namespace: gitlab-system
   annotations:
-    argocd.argoproj.io/sync-wave: "1"
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   chart:
     values:
@@ -12,9 +12,8 @@ spec:
         hosts:
           domain: example.com
         ingress:
-          class: openshift-default
+          class: none
           configureCertmanager: false
-          enabled: true
           annotations:
             route.openshift.io/termination: "edge"
       nginx-ingress:
