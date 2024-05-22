@@ -1,0 +1,3 @@
+resources:
+  - argocd-virt-role.yaml
+  - argocd-virt-rolebinding.yaml

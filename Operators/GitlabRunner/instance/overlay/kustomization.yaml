@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../base/
+
+patches:
+  - target:
+      group: apps.gitlab.com
+      version: v1beta2
+      kind: Runner
+      name: gitlab-runner
+      namespace: gitlab-system
+    path: patch-domain.yaml

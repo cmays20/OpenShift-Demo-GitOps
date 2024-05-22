@@ -8,12 +8,6 @@ metadata:
 spec:
   chart:
     values:
-      gitlab-runner:
-        runners:
-          config: |
-            [[runners]]
-              [runners.kubernetes]
-              image = "ubuntu:22.04"
       gitlab:
         webservice:
           ingress:

@@ -1,0 +1,3 @@
+- op: replace
+  path: /spec/gitlabUrl
+  value: 'https://gitlab.apps.mays-demo.sandbox1875.opentlc.com'

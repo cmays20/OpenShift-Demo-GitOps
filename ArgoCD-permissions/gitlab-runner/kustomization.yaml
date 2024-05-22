@@ -1,0 +1,3 @@
+resources:
+  - argocd-gitlab-runner-role.yaml
+  - argocd-gitlab-runner-rolebinding.yaml
