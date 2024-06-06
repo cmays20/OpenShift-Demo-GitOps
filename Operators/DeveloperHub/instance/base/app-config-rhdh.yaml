@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config-rhdh
+  namespace: rhdh-operator
+data:
+  "app-config-rhdh.yaml": |
+    app:
+      title: Red Hat Developer Hub
+      baseUrl: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox1875.opentlc.com
+    backend:
+      auth:
+        keys:
+          - secret: secrets-rhdh
+      baseUrl: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox1875.opentlc.com
+      cors:
+        origin: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox1875.opentlc.com
+    auth:
+      environment: development
+      providers:
+        gitlab:
+          development:
+            clientId:

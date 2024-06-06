@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: developer-hub
+  namespace: openshift-gitops
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: Operators/DeveloperHub/aggregate
+    repoURL: 'https://github.com/cmays20/OpenShift-POC-4.14.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      selfHeal: true
