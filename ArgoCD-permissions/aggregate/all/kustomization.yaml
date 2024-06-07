@@ -1,6 +1,7 @@
 resources:
   - ../../cert-manager
   - ../../rhacs
+  - ../../gitlab
   - ../../gitlab-runner
   - ../../virtualization
   - ../../developer-hub
