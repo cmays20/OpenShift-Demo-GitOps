@@ -1,27 +1,27 @@
 - op: replace
   path: /metadata/name
-  value: mays-demo-qspp6-infra-us-east-2a
+  value: mays-demo-j9l8p-infra-us-east-2a
 - op: replace
   path: /metadata/labels/machine.openshift.io~1cluster-api-cluster
-  value: mays-demo-qspp6
+  value: mays-demo-j9l8p
 - op: replace
   path: /spec/selector/matchLabels/machine.openshift.io~1cluster-api-cluster
-  value: mays-demo-qspp6
+  value: mays-demo-j9l8p
 - op: replace
   path: /spec/selector/matchLabels/machine.openshift.io~1cluster-api-machineset
-  value: mays-demo-qspp6-infra-us-east-2a
+  value: mays-demo-j9l8p-infra-us-east-2a
 - op: replace
   path: /spec/template/metadata/labels/machine.openshift.io~1cluster-api-cluster
-  value: mays-demo-qspp6
+  value: mays-demo-j9l8p
 - op: replace
   path: /spec/template/metadata/labels/machine.openshift.io~1cluster-api-machineset
-  value: mays-demo-qspp6-infra-us-east-2a
+  value: mays-demo-j9l8p-infra-us-east-2a
 - op: replace
   path: /spec/template/spec/providerSpec/value/ami/id
   value: ami-049d8fda91038a0fd
 - op: replace
   path: /spec/template/spec/providerSpec/value/iamInstanceProfile/id
-  value: mays-demo-qspp6-worker-profile
+  value: mays-demo-j9l8p-worker-profile
 - op: replace
   path: /spec/template/spec/providerSpec/value/placement/availabilityZone
   value: us-east-2a
@@ -30,10 +30,10 @@
   value: us-east-2
 - op: replace
   path: /spec/template/spec/providerSpec/value/securityGroups/0/filters/0/values/0
-  value: mays-demo-qspp6-worker-sg
+  value: mays-demo-j9l8p-worker-sg
 - op: replace
   path: /spec/template/spec/providerSpec/value/subnet/filters/0/values/0
-  value: mays-demo-qspp6-private-us-east-2a
+  value: mays-demo-j9l8p-private-us-east-2a
 - op: replace
   path: /spec/template/spec/providerSpec/value/tags/0/name
-  value: kubernetes.io/cluster/mays-demo-qspp6
+  value: kubernetes.io/cluster/mays-demo-j9l8p
