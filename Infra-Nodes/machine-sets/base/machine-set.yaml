@@ -21,7 +21,6 @@ spec:
     spec:
       metadata:
         labels:
-          node-role.kubernetes.io/worker: ""
           node-role.kubernetes.io/infra: ""
           cluster.ocs.openshift.io/openshift-storage: ""
       providerSpec:
@@ -60,5 +59,6 @@ spec:
           userDataSecret:
             name: worker-user-data
       taints:
-        - key: node-role.kubernetes.io/infra
-          effect: NoSchedule
+        - effect: NoSchedule
+          key: node.ocs.openshift.io/storage
+          value: "true"
