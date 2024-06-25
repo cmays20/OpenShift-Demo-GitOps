@@ -8,6 +8,8 @@ metadata:
 spec:
   chart:
     values:
+      prometheus:
+        install: false
       gitlab:
         webservice:
           ingress:
@@ -34,6 +36,22 @@ spec:
             route.openshift.io/termination: "edge"
             kubernetes.io/tls-acme: true
             cert-manager.io/cluster-issuer: acme-prod-issuer
+        email:
+          display_name: "GitLab"
+          from: "chmays@redhat.com"
+          reply_to: "chmays@redhat.com"
+        smtp:
+          enabled: true
+          address: 'smtp.gmail.com'
+          tls: false
+          port: 587
+          authentication: 'login'
+          user_name: 'chmays@redhat.com'
+          starttls_auto: true
+          openssl_verify_mode: "peer"
+          password:
+            secret: "smtp-password"
+            key: "password"
       nginx-ingress:
         enabled: false
       certmanager:
