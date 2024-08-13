@@ -6,4 +6,4 @@ commonAnnotations:
 
 resources:
   - ../operator/base
-  - ../instance/base
+  - ../instance/overlay
