@@ -1,0 +1,8 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: argocd-aap-role
+rules:
+  - apiGroups: ["automationcontroller.ansible.com"] # "" indicates the core API group
+    resources: ["*"]
+    verbs: ["*"]

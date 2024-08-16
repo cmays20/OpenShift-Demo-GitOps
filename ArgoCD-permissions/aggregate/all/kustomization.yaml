@@ -5,3 +5,4 @@ resources:
   - ../../gitlab-runner
   - ../../virtualization
   - ../../developer-hub
+  - ../../aap
