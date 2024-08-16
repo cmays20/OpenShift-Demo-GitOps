@@ -19,5 +19,5 @@ spec:
   extra_settings:
     - setting: SOCIAL_AUTH_PROTECTED_USER_FIELDS
       value:
-        - groups\
+        - groups
   #Might be able to set the CONTROLLER_BASE_URL here
