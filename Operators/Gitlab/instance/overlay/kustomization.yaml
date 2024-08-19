@@ -12,3 +12,9 @@ patches:
       name: gitlab
       namespace: gitlab-system
     path: patch-domain.yaml
+  - target:
+      group: console.openshift.io
+      version: v1
+      kind: ConsoleLink
+      name: gitlab
+    path: patch-console-link.yaml

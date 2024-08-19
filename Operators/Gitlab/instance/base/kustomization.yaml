@@ -6,3 +6,4 @@ commonAnnotations:
 
 resources:
   - gitlab.yaml
+  - console-link.yaml
