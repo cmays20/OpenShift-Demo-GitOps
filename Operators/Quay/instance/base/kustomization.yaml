@@ -7,3 +7,4 @@ commonAnnotations:
 resources:
   - quay.yaml
   - namespace.yaml
+  - create-initial-user-job.yaml
