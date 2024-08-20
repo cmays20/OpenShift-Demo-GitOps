@@ -10,7 +10,7 @@ patches:
       group: console.openshift.io
       version: v1
       kind: ConsoleLink
-      name: acs-console-link
+      name: quay-enterprise
     patch: |-
       - op: replace
         path: /spec/href
