@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: odf-aws-multiCloudGateway
+  name: odf-aws-multi-cloud-gateway
   namespace: openshift-gitops
 spec:
   destination:
