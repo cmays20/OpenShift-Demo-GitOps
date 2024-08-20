@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: aap
+  name: quay
   namespace: openshift-gitops
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: Operators/AAP/aggregate
+    path: Operators/quay/aggregate
     repoURL: 'https://github.com/cmays20/OpenShift-Demo-GitOps.git'
     targetRevision: HEAD
   syncPolicy:

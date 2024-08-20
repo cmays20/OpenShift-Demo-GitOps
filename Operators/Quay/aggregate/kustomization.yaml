@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - ../operator/base/
-  #- ../instance/overlay/
+  - ../instance/overlay/
