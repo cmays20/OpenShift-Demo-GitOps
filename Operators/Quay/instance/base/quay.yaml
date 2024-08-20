@@ -27,6 +27,6 @@ spec:
     - kind: monitoring
       managed: true
     - kind: tls
-      managed: false
+      managed: true
     - kind: clairpostgres
       managed: true
