@@ -3,6 +3,8 @@ kind: StorageCluster
 metadata:
   name: ocs-storagecluster
   namespace: openshift-storage
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   storageDeviceSets:
     - config: {}
@@ -19,6 +21,7 @@ spec:
               storage: 2Ti
           storageClassName: gp3-csi
           volumeMode: Block
+        status: {}
       count: 1
       replica: 3
       portable: true
@@ -32,10 +35,12 @@ spec:
     cephObjectStoreUsers: {}
     cephCluster: {}
     cephBlockPools: {}
-    cephNonResilientPools: {}
+    cephNonResilientPools:
+      count: 1
     cephObjectStores: {}
     cephFilesystems: {}
-    cephRBDMirror: {}
+    cephRBDMirror:
+      daemonCount: 1
     cephToolbox: {}
     cephDashboard: {}
     cephConfig: {}
@@ -47,4 +52,4 @@ spec:
     multiClusterService: {}
   nodeTopologies: {}
   externalStorage: {}
-  resourceProfile: lean
+  resourceProfile: balanced

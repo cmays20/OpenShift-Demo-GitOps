@@ -4,8 +4,6 @@ kind: Kustomization
 
 namespace: openshift-storage
 
-commonAnnotations:
-  argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
-
 resources:
-  - storagesystem.yaml
+  - ../../base
+  - storagecluster.yaml
