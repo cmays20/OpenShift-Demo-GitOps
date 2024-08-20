@@ -6,3 +6,4 @@ commonAnnotations:
 
 resources:
   - quay.yaml
+  - namespace.yaml
