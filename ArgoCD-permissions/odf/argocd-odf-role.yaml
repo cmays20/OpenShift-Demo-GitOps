@@ -6,3 +6,6 @@ rules:
   - apiGroups: ["odf.openshift.io"] # "" indicates the core API group
     resources: ["*"]
     verbs: ["*"]
+  - apiGroups: [ "ocs.openshift.io" ] # "" indicates the core API group
+    resources: [ "*" ]
+    verbs: [ "*" ]
