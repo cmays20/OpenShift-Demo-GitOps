@@ -1,0 +1,3 @@
+resources:
+  - argocd-keycloak-role.yaml
+  - argocd-keycloak-rolebinding.yaml
