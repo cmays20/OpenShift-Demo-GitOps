@@ -7,3 +7,4 @@ resources:
   - postgres.yaml
   - keycloak.yaml
   - certificate.yaml
+  - console-link.yaml
