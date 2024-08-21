@@ -9,7 +9,7 @@ patches:
       group: cert-manager.io
       version: v1
       kind: Certificate
-      name: router-certs-letsencrypt
+      name: keycloak-certs-letsencrypt
     patch: |-
       - op: replace
         path: /spec/commonName
@@ -21,7 +21,7 @@ patches:
       group: k8s.keycloak.org
       version: v2alpha1
       kind: Keycloak
-      name: router-certs-letsencrypt
+      name: keycloak
     patch: |-
       - op: replace
         path: /spec/hostname/hostname
