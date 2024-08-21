@@ -1,0 +1,21 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: keycloak-certs-letsencrypt
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
+spec:
+  commonName: '*.apps.clustername.example.com'
+  dnsNames:
+    - '*.apps.clustername.example.com'
+  duration: 2160h0m0s
+  issuerRef:
+    kind: ClusterIssuer
+    name: acme-prod-issuer
+  privateKey:
+    algorithm: RSA
+    encoding: PKCS1
+    rotationPolicy: Always
+    size: 2048
+  renewBefore: 720h0m0s
+  secretName: keycloak-certs-letsencrypt
