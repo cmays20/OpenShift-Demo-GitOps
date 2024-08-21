@@ -8,7 +8,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: Operators/Keycloak/operator/overlays/stable-v24
+    path: Operators/Keycloak/aggregate
     repoURL: 'https://github.com/cmays20/OpenShift-Demo-GitOps.git'
     targetRevision: HEAD
   syncPolicy:
