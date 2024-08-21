@@ -26,3 +26,12 @@ patches:
       - op: replace
         path: /spec/hostname/hostname
         value: 'keycloak.apps.mays-demo.sandbox1367.opentlc.com'
+  - target:
+      group: console.openshift.io
+      version: v1
+      kind: ConsoleLink
+      name: keycloak
+    patch: |-
+      - op: replace
+        path: /spec/href
+        value: 'https://keycloak.apps.mays-demo.sandbox1367.opentlc.com'
