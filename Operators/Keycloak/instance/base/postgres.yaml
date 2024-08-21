@@ -36,7 +36,20 @@ spec:
               value: keycloak
       volumes:
         - name: cache-volume
-          emptyDir: {}
+          persistentVolumeClaim:
+            claimName: postgres-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+  volumeMode: Filesystem
 ---
 apiVersion: v1
 kind: Service
@@ -45,7 +58,7 @@ metadata:
 spec:
   selector:
     app: postgresql-db
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 5432
       targetPort: 5432
