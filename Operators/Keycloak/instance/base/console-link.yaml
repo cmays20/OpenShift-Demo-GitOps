@@ -2,6 +2,8 @@ apiVersion: console.openshift.io/v1
 kind: ConsoleLink
 metadata:
   name: keycloak
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
 spec:
   applicationMenu:
     section: Red Hat Applications
