@@ -44,9 +44,13 @@ spec:
             region: <region>
           securityGroups:
             - filters:
-                - name: tag:Name
-                  values:
-                    - <infrastructure_id>-worker-sg
+              - name: 'tag:Name'
+                values:
+                  - mays-demo-gsth5-node
+            - filters:
+              - name: 'tag:Name'
+                values:
+                  - mays-demo-gsth5-lb
           subnet:
             filters:
               - name: tag:Name
