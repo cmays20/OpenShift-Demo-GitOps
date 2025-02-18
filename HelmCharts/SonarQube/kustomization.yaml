@@ -1,0 +1,14 @@
+namespace: sonarqube
+
+resources:
+  - namespace.yaml
+
+helmCharts:
+  - name: sonarqube
+    repo: https://SonarSource.github.io/helm-chart-sonarqube
+    namespace: sonarqube
+    releaseName: sonarqube
+    valuesFile: values.yaml
+
+generators:
+  - monitoring-passcode-generator.yaml
