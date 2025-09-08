@@ -1,15 +1,14 @@
-
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: aap
+  name: argocd-setup
   namespace: openshift-gitops
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: Operators/AAP/aggregate
+    path: ArgoCD-Setup
     repoURL: 'https://github.com/cmays20/OpenShift-Demo-GitOps.git'
     targetRevision: HEAD
   syncPolicy:

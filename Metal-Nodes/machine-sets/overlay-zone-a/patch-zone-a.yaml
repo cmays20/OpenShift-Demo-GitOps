@@ -33,7 +33,7 @@
   value: mays-demo-gsth5-worker-sg
 - op: replace
   path: /spec/template/spec/providerSpec/value/subnet/filters/0/values/0
-  value: mays-demo-gsth5-private-us-east-2a
+  value: mays-demo-gsth5-subnet-private-us-east-2a
 - op: replace
   path: /spec/template/spec/providerSpec/value/tags/0/name
   value: kubernetes.io/cluster/mays-demo-gsth5
