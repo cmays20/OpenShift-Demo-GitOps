@@ -8,7 +8,7 @@ patches:
   - patch: |-
       - op: replace
         path: /spec/channel
-        value: 'stable-v24'
+        value: 'stable-v26'
     target:
       kind: Subscription
       name: rhbk-operator
