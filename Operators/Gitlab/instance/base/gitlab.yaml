@@ -56,4 +56,4 @@ spec:
         enabled: false
       certmanager:
         install: false
-    version: 9.6.0
+    version: 9.8.2
