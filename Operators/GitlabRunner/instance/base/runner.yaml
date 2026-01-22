@@ -6,7 +6,7 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
-  buildImage: 'registry.access.redhat.com/ubi9/ubi@sha256:ed84f34cd929ea6b0c247b6daef54dd79602804a32480a052951021caf429494'
+  buildImage: 'registry.redhat.io/ubi9/ubi:9.7'
   gitlabUrl: REPLACE_ME
   imagePullPolicy: Always
   runUntagged: true
