@@ -14,4 +14,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/href
-        value: 'https://example-registry-quay-quay-enterprise.apps.mays-demo.sandbox1367.opentlc.com'
+        value: 'https://example-registry-quay-quay-enterprise.apps.mays-demo.sandbox5183.opentlc.com'

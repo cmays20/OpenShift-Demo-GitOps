@@ -13,10 +13,10 @@ patches:
     patch: |-
       - op: replace
         path: /spec/commonName
-        value: 'keycloak.apps.mays-demo.sandbox1367.opentlc.com'
+        value: 'keycloak.apps.mays-demo.sandbox5183.opentlc.com'
       - op: replace
         path: /spec/dnsNames/0
-        value: 'keycloak.apps.mays-demo.sandbox1367.opentlc.com'
+        value: 'keycloak.apps.mays-demo.sandbox5183.opentlc.com'
   - target:
       group: k8s.keycloak.org
       version: v2alpha1
@@ -25,7 +25,7 @@ patches:
     patch: |-
       - op: replace
         path: /spec/hostname/hostname
-        value: 'keycloak.apps.mays-demo.sandbox1367.opentlc.com'
+        value: 'keycloak.apps.mays-demo.sandbox5183.opentlc.com'
   - target:
       group: console.openshift.io
       version: v1
@@ -34,4 +34,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/href
-        value: 'https://keycloak.apps.mays-demo.sandbox1367.opentlc.com'
+        value: 'https://keycloak.apps.mays-demo.sandbox5183.opentlc.com'

@@ -7,14 +7,14 @@ data:
   "app-config-rhdh.yaml": |
     app:
       title: Red Hat Developer Hub
-      baseUrl: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox1875.opentlc.com
+      baseUrl: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox5183.opentlc.com
     backend:
       auth:
         keys:
           - secret: secrets-rhdh
-      baseUrl: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox1875.opentlc.com
+      baseUrl: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox5183.opentlc.com
       cors:
-        origin: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox1875.opentlc.com
+        origin: https://backstage-developer-hub-rhdh-operator.apps.mays-demo.sandbox5183.opentlc.com
     auth:
       environment: development
       providers:
